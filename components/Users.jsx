@@ -10,7 +10,11 @@ function Users({ data, num }) {
     return (
         <ul className="inline-flex justify-center flex-col ">
             {data.map((users) => (
-                <Link className="m-5" key={users.id} href={`/user/${users.id}`}>
+                <Link
+                    className="m-5"
+                    key={users.id}
+                    href={`/users/${users.id}`}
+                >
                     <li
                         key={users.id}
                         className={clsx(
